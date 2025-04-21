@@ -5,6 +5,8 @@ import "./globals.css"
 import { CartProvider } from "@/hooks/use-cart"
 
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
+
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -23,6 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <SpeedInsights />
+        <Analytics />
         <CartProvider>{children}</CartProvider>
       </body>
     </html>
