@@ -69,7 +69,7 @@ export default function Home() {
           <Suspense fallback={<p>Just Do It!</p>}>
           <Image 
             src="animation_branch.gif"
-            width={1600}
+            width={2000}
             height={300}
             alt="running"
           />
